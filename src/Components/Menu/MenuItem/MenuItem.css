@@ -1,0 +1,28 @@
+.menuItem {
+    font-family: var(--ff-secondary);
+    text-align: center;
+    width: 70%;
+    margin: 1.2em auto 0 auto;
+  }
+  
+  .menuItem h3 {
+    color: var(--clr-accent);
+    text-shadow: 0.02em 0.02em rgba(0, 0, 0, 0.641);
+    margin: 0.7em auto;
+    padding: 0.2em;
+    border-top: 1px solid var(--clr-dark);
+    border-bottom: 1px solid var(--clr-dark);
+    width: fit-content;
+  }
+  
+  .menuItem_Price {
+    display: flex;
+    justify-content: center;
+  }
+  .menuItem_Price p {
+    margin: 2em 1em 0em 1em;
+  }
+
+  .menuItem_additions p {
+    font-style: italic;
+  }

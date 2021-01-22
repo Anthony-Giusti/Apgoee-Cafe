@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": ["warn", { "endOfLine" : "auto"}],
+        "no-unused-vars":"warn",
+        "no-undef": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/self-closing-comp": ["error", {
+            "component": false,
+            "html": true
+          }],
+        "react/jsx-closing-tag-location" : "off"
+    }
+}

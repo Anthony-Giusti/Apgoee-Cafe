@@ -1,5 +1,3 @@
-const quality = 'q_auto:eco';
-
 const GridData = [
   {
     url: `https://res.cloudinary.com/diby2nljo/image/upload/c_fill,h_350,q_auto:eco,w_500/v1610403058/CoffeeShopProject/Coffee_Pattern.jpg`,

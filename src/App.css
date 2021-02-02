@@ -301,6 +301,7 @@ a:hover {
   text-shadow: 0.02em 0.02em black;
   color: white;
   background-repeat: no-repeat;
+  cursor: pointer;
   overflow: hidden;
 }
 

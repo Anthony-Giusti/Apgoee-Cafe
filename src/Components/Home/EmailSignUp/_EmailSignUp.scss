@@ -12,9 +12,9 @@
 		border-radius: 3rem;
 		cursor: pointer;
 		
-		// &:focus {
-		// 	outline: 0.5em solid $clr-accent-other;
-		// }
+		&:focus {
+			outline: 0.5em solid $clr-accent-other;
+		}
 	}
 
 	&_box {

@@ -9,10 +9,11 @@ This is a project to practice with React Router which I had previusly never used
 * [React]
 * [React Router]
 * [Framer Motion]
-* [Focus Trap]
+* [Focus Trap] - For Gallery Modal
 
 ## Additional Resources Used
 
+* [Font Awesome] - For Footer Icons
 * [Images Used]
 * [Video Clips Used]
 
@@ -21,5 +22,6 @@ This is a project to practice with React Router which I had previusly never used
    [Framer Motion]: <https://www.framer.com/motion/>
    [Focus Trap]: <https://www.npmjs.com/package/focus-trap>
 
+   [Font Awesome]: <https://fontawesome.com/>
    [Images Used]: <https://www.pexels.com/collections/coffee-shop-images-hcgdvwm/>
    [Video Clips Used]: <https://www.pexels.com/collections/coffee-video-clips-zebuwgy/>

@@ -301,8 +301,6 @@ a:hover {
   text-shadow: 0.02em 0.02em black;
   color: white;
   background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -354,6 +352,10 @@ a:hover {
   outline: none;
   border-radius: 3rem;
   cursor: pointer;
+}
+
+.newsLetter button:focus {
+  outline: 0.5em solid #eb8164;
 }
 
 .newsLetter_box {

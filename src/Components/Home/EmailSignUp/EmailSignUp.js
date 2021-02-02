@@ -50,21 +50,23 @@ const EmailSignUp = ({ emailOpen, setEmailOpen }) => {
               className="newsLetter_box_input"
               initial={{ height: 0, y: 0 }}
               animate={{ opacity: 1, height: 'auto', y: 5 }}
-              exit={{ height: 0, y: -33 }}
+              exit={{ height: 0, outline: 'none', y: -33 }}
               transition={{ duration: 0.5, type: 'tween' }}
             >
-              <input
-                initial={{ y: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ y: -0 }}
+              <motion.input
+                initial={{ y: -20 }}
+                animate={{ y: 0 }}
+                exit={{ y: -5, opacity: 0 }}
                 transition={{ duration: 0.5, type: 'tween' }}
                 type="text"
                 id="email-input"
                 placeholder="Email Address"
               />
               <motion.button
-                exit={{ height: 0, y: -20 }}
-                transition={{ duration: 1, type: 'tween' }}
+                initial={{ y: -40 }}
+                animate={{ y: 0 }}
+                exit={{ y: -25 }}
+                transition={{ duration: 0.5, type: 'tween' }}
                 type="submit"
                 id="email-submit"
               >

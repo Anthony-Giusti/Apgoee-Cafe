@@ -1,11 +1,9 @@
 import React from 'react';
 
-import './Footer.css';
-
 const Footer = () => (
-  <footer>
+  <footer className="footer">
     <section className="footer_info">
-      <section className="footer_donate">
+      <section className="footer_info_donate">
         <h3>Support The Space</h3>
         <p>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -20,7 +18,7 @@ const Footer = () => (
           senectus et netus et malesuada fames ac. Id neque aliquam vestibulum
           morbi blandit cursus risus at.
         </p>
-        <section className="footer_supportLinks">
+        <span className="footer_info_donate_supportLinks">
           <a href="/">
             <p>Become a Member</p>
           </a>
@@ -32,9 +30,9 @@ const Footer = () => (
           <a href="/">
             <p>Account</p>
           </a>
-        </section>
+        </span>
       </section>
-      <section className="footer_contact">
+      <section className="footer_info_contact">
         <h3>Come Find Us</h3>
         <p>
           <b>201 E Randolph St, Chicago, IL 60602</b>
@@ -62,7 +60,7 @@ const Footer = () => (
         <br />
         <i className="fas fa-envelope-square" />
         <a href="mailto:apogeecafe@email.com">apogeecafe@email.com</a>
-        <div className="footer_socialMedia">
+        <span className="footer_info_contact_socialMedia">
           <a href="https://www.instagram.com/" target="blank">
             <i className="fab fa-instagram fa-3x" />
           </a>
@@ -75,11 +73,11 @@ const Footer = () => (
           <a href="https://www.youtube.com/" target="blank">
             <i className="fab fa-youtube  fa-3x" />
           </a>
-        </div>
+        </span>
       </section>
     </section>
     <hr />
-    <section className="footer_copyright">
+    <section className="footer_info_copyright">
       <p>Copyright © 2021 Apogee Cafe All Rights Reserved</p>
       <p>Website By Company Name</p>
     </section>

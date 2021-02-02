@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 import MenuItem from './MenuItem/MenuItem';
 
-import './Menu.css';
-
 const Menu = ({
   switchNavSelection,
   currentMenu,
@@ -14,7 +12,7 @@ const Menu = ({
   menuSection,
   switchMenuSection,
 }) => {
-  const elems = document.querySelectorAll('.menuBtn');
+  const elems = document.querySelectorAll('.menu_menuNav_menuBtn');
   switchNavSelection(useLocation());
 
   const itemsMap = currentMenu.items.map((item) => (
@@ -72,7 +70,7 @@ const Menu = ({
   return (
     <section className="menu">
       <motion.nav
-        className="menuNav"
+        className="menu_menuNav"
         initial={{ y: -50 }}
         animate={{ y: 0, type: 'tween' }}
         transition={{ type: 'tween', duration: 0.75 }}
@@ -81,7 +79,7 @@ const Menu = ({
           <motion.li
             variants={menuVariants}
             whileHover="hover"
-            className="menuBtn"
+            className="menu_menuNav_menuBtn"
             type="button"
             id="coffee"
             onClick={handeClick}
@@ -93,7 +91,7 @@ const Menu = ({
           <motion.li
             variants={menuVariants}
             whileHover="hover"
-            className="menuBtn"
+            className="menu_menuNav_menuBtn"
             type="button"
             id="espresso"
             onClick={handeClick}
@@ -105,7 +103,7 @@ const Menu = ({
           <motion.li
             variants={menuVariants}
             whileHover="hover"
-            className="menuBtn"
+            className="menu_menuNav_menuBtn"
             type="button"
             id="iced-drinks"
             onClick={handeClick}
@@ -117,7 +115,7 @@ const Menu = ({
           <motion.li
             variants={menuVariants}
             whileHover="hover"
-            className="menuBtn"
+            className="menu_menuNav_menuBtn"
             type="button"
             id="hot-drinks"
             onClick={handeClick}
@@ -129,7 +127,7 @@ const Menu = ({
           <motion.li
             variants={menuVariants}
             whileHover="hover"
-            className="menuBtn"
+            className="menu_menuNav_menuBtn"
             type="button"
             id="breakfast"
             onClick={handeClick}
@@ -141,7 +139,7 @@ const Menu = ({
           <motion.li
             variants={menuVariants}
             whileHover="hover"
-            className="menuBtn"
+            className="menu_menuNav_menuBtn"
             type="button"
             id="lunch"
             onClick={handeClick}
@@ -152,25 +150,25 @@ const Menu = ({
           </motion.li>
         </ul>
       </motion.nav>
-      <section className="menuBody">
+      <section className="menu_main">
         <motion.section
           variants={variants}
           initial="initial"
           animate="animate"
-          className="menuItemsHeader"
+          className="menu_main_header"
         >
-          <p id="menuItem-description">{currentMenu.description}</p>
+          <p className="menu_main_description">{currentMenu.description}</p>
           {currentMenu.additions && (
-            <div className='"menu_Addtions'>
+            <span className='"menu_main_additions'>
               {getItemAdditions(currentMenu.additions)}
-            </div>
+            </span>
           )}
         </motion.section>
         <motion.section
           variants={variants}
           initial="initial"
           animate="animate"
-          className="menuItems"
+          className="menu_main_menuItems"
         >
           {itemsMap}
         </motion.section>

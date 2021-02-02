@@ -1,0 +1,75 @@
+.mainNav {
+	z-index: 2;
+	position: relative;
+	align-items: center;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('https://res.cloudinary.com/diby2nljo/image/upload/c_scale,q_auto:eco,w_1769/v1612220251/CoffeeShopProject/header.jpg');
+	background-color: rgba(255, 255, 255, 0.328);
+	background-position: center;
+	background-size: cover;
+	font-size: 1.8em;
+	letter-spacing: .2em;
+	border-bottom: 0.8rem solid $clr-accent;
+	width: 100%;
+
+	a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+	}
+
+	nav {
+		background-color: rgba(0, 0, 0, 0.358);
+	}
+
+	ul {
+		display: flex;
+		margin: 0;
+		text-shadow: 0 2px rgba(0, 0, 0, 0.596);
+		padding-left: 0;
+	}
+	
+	&_navBtnContainer {
+		flex: 0 1 5em;
+		li {
+			padding: 0.3em 0;
+		}
+	}
+}
+.mainNavSelected {
+	border-top: white solid 1px;
+	border-bottom: white solid 1px;
+}
+
+#logo-container {
+	flex: 0 1 12em;
+}
+
+@media only screen and (max-width: 1150px) {
+	#logo-container {
+		order: -1;
+		flex: 0;
+		margin-bottom: 0.3em;
+	}
+	.mainNav {
+		ul {
+			margin: 0 auto;
+			width: 70%;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: initial;
+			outline: 1px solid $clr-accent;
+			background-color: $clr-accent;
+		}
+		&_navBtnContainer {
+			margin: 0 auto;
+			flex: 0;
+			width: 60%;
+		}
+	}
+}
+@media only screen and (max-width: 800px) {
+	.mainNav {
+		ul {
+			width: 85%;
+		}
+	}
+}

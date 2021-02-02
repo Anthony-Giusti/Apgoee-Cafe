@@ -25,9 +25,9 @@ const Location = ({ switchNavSelection }) => {
 
   return (
     <section className="location">
-      <div className="locationBody">
+      <div className="location_main">
         <motion.section
-          className="location_description"
+          className="location_main_description"
           variants={variants}
           initial="initial"
           animate="animate"

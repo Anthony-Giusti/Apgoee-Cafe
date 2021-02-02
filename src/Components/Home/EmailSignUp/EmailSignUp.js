@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PropTypes from 'prop-types';
 
-import './EmailSignUp.css';
-
 const EmailSignUp = ({ emailOpen, setEmailOpen }) => {
   const [emailError, setEmailError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -29,7 +27,7 @@ const EmailSignUp = ({ emailOpen, setEmailOpen }) => {
   };
 
   return (
-    <section className="newsletter">
+    <section className="newsLetter">
       <div className="newsLetter_box">
         <motion.button
           id="sign-up-btn"
@@ -49,16 +47,29 @@ const EmailSignUp = ({ emailOpen, setEmailOpen }) => {
             <motion.form
               onSubmit={emailValidation}
               name="email"
-              className="newsLetter_input"
-              initial={{ height: 0, opacity: 0, y: 0 }}
+              className="newsLetter_box_input"
+              initial={{ height: 0, y: 0 }}
               animate={{ opacity: 1, height: 'auto', y: 5 }}
-              exit={{ height: 0, opacity: 0, y: -30 }}
-              transition={{ duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }}
+              exit={{ height: 0, y: -33 }}
+              transition={{ duration: 0.5, type: 'tween' }}
             >
-              <input type="text" id="email-input" placeholder="Email Address" />
-              <button type="submit" id="email-submit">
+              <input
+                initial={{ y: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ y: -0 }}
+                transition={{ duration: 0.5, type: 'tween' }}
+                type="text"
+                id="email-input"
+                placeholder="Email Address"
+              />
+              <motion.button
+                exit={{ height: 0, y: -20 }}
+                transition={{ duration: 1, type: 'tween' }}
+                type="submit"
+                id="email-submit"
+              >
                 Get Updates
-              </button>
+              </motion.button>
             </motion.form>
           )}
         </AnimatePresence>

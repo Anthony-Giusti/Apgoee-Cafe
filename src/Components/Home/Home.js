@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 import EmailSignUp from './EmailSignUp/EmailSignUp';
 
-import './Home.css';
-
 const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
   switchNavSelection(useLocation());
 
@@ -27,78 +25,74 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
 
   return (
     <section className="home">
-      <div className="videoContainer">
-        <div className="videoContainer_Overlay" />
+      <div className="home_videoContainer">
+        <div className="home_videoContainer_overlay" />
         <video loop autoPlay muted>
           <source src="https://res.cloudinary.com/diby2nljo/video/upload/v1610489670/cafe7_c5u2gp.mp4" />
           Unable to play video
         </video>
-        <div className="videoContainer_TextContainer">
-          <div className="videoText">
-            <motion.h2
+        <div className="home_videoContainer_textContainer">
+          <motion.h2
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            transition="transition"
+          >
+            Welcome To Our Space
+          </motion.h2>
+          <span className="home_videoContainer_textContainer_mission">
+            <motion.span
+              className="home_videoContainer_textContainer_mission_mission_section"
               variants={variants}
               initial="initial"
               animate="animate"
               transition="transition"
             >
-              Welcome To Our Space
-            </motion.h2>
-            <div className="mission">
-              <motion.div
-                className="mission_section"
-                variants={variants}
-                initial="initial"
-                animate="animate"
-                transition="transition"
-              >
-                <h3>Et netus</h3>
-                <p>
-                  Et netus et malesuada fames ac. Varius sit amet mattis
-                  vulputate enim. Metus aliquam eleifend mi in nulla. Adipiscing
-                  diam donec adipiscing tristique risus. Consectetur a erat nam
-                  at. Gravida quis blandit turpis cursus in hac habitasse
-                  platea. Neque viverra justo nec ultrices. Diam in arcu cursus
-                  euismod quis viverra. Congue quisque egestas diam in arcu
-                  cursus.
-                </p>
-              </motion.div>
-              <motion.div
-                className="mission_section"
-                variants={variants}
-                initial="initial"
-                animate="animate"
-                transition="transition"
-              >
-                <h3>Ridiculus mus </h3>
-                <p>
-                  Ridiculus mus mauris vitae ultricies leo integer malesuada
-                  nunc. Interdum varius sit amet mattis vulputate enim.
-                  Penatibus et magnis dis parturient. Lacinia at quis risus sed.
-                  Elit ullamcorper dignissim cras tincidunt lobortis. Mi ipsum
-                  faucibus vitae aliquet nec. Nunc scelerisque viverra mauris in
-                  aliquam sem fringilla.
-                </p>
-              </motion.div>
-              <motion.div
-                className="mission_section"
-                variants={variants}
-                initial="initial"
-                animate="animate"
-                transition="transition"
-              >
-                <h3>Lorem ipsum</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis at consectetur lorem donec massa. Ipsum a arcu cursus
-                  vitae. Lobortis feugiat vivamus at augue eget. Risus at
-                  ultrices mi tempus. Lectus sit amet est placerat in egestas
-                  erat imperdiet. Eu scelerisque felis imperdiet proin fermentum
-                  leo vel.
-                </p>
-              </motion.div>
-            </div>
-          </div>
+              <h3>Et netus</h3>
+              <p>
+                Et netus et malesuada fames ac. Varius sit amet mattis vulputate
+                enim. Metus aliquam eleifend mi in nulla. Adipiscing diam donec
+                adipiscing tristique risus. Consectetur a erat nam at. Gravida
+                quis blandit turpis cursus in hac habitasse platea. Neque
+                viverra justo nec ultrices. Diam in arcu cursus euismod quis
+                viverra. Congue quisque egestas diam in arcu cursus.
+              </p>
+            </motion.span>
+            <motion.span
+              className="home_videoContainer_textContainer_mission_mission_section"
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition="transition"
+            >
+              <h3>Ridiculus mus </h3>
+              <p>
+                Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.
+                Interdum varius sit amet mattis vulputate enim. Penatibus et
+                magnis dis parturient. Lacinia at quis risus sed. Elit
+                ullamcorper dignissim cras tincidunt lobortis. Mi ipsum faucibus
+                vitae aliquet nec. Nunc scelerisque viverra mauris in aliquam
+                sem fringilla.
+              </p>
+            </motion.span>
+            <motion.span
+              className="home_videoContainer_textContainer_mission_mission_section"
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              transition="transition"
+            >
+              <h3>Lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                at consectetur lorem donec massa. Ipsum a arcu cursus vitae.
+                Lobortis feugiat vivamus at augue eget. Risus at ultrices mi
+                tempus. Lectus sit amet est placerat in egestas erat imperdiet.
+                Eu scelerisque felis imperdiet proin fermentum leo vel.
+              </p>
+            </motion.span>
+          </span>
         </div>
       </div>
       <motion.section
@@ -106,7 +100,7 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
         initial={{ opacity: 0, x: -50 }}
         animate="animate"
         transition="transition"
-        className="objectives"
+        className="home_objectives"
       >
         <h2>Objectives</h2>
         <p>
@@ -130,7 +124,7 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
         </p>
       </motion.section>
       <EmailSignUp emailOpen={emailOpen} setEmailOpen={setEmailOpen} />
-      <section className="objectives vision">
+      <section className="home_vision">
         <motion.div
           variants={variants}
           initial={{ opacity: 0, x: 50 }}

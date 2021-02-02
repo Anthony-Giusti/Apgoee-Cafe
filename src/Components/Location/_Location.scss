@@ -2,22 +2,22 @@
     position: relative;
     z-index: 3;
     background-image: url(https://res.cloudinary.com/diby2nljo/image/upload/c_fill,q_auto:eco,w_1924/v1610477303/CoffeeShopProject/Cafe_Exterior.jpg);
-}
 
-.locationBody {
-    margin: 0 auto;
+    &_main {
+        margin: 0 auto;
     width: 70%;
     background-color: $light;
-}
 
-.location_description {
-    margin: 0 auto;
-    width: 70%;
-}
+        &_description {
+            margin: 0 auto;
+            width: 70%;
 
-.location_description h3 {
-    margin-top: 0;
-    padding-top: 1em;
+            h3 {
+                margin-top: 0;
+                padding-top: 1em;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 900px) {

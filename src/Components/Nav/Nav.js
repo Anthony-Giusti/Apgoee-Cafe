@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 import Logo from '../Logo/Logo';
 
-import './Nav.css';
-
 const navVariants = {
   initial: {
     y: 25,
@@ -42,7 +40,7 @@ const Nav = ({ navSelection }) => {
     <section className="mainNav">
       <nav>
         <ul>
-          <Link to="/" className="navBtnContainer">
+          <Link to="/" className="mainNav_navBtnContainer">
             <motion.li
               variants={navVariants}
               initial="initial"
@@ -54,7 +52,7 @@ const Nav = ({ navSelection }) => {
               Home
             </motion.li>
           </Link>
-          <Link to="/menu" className="navBtnContainer">
+          <Link to="/menu" className="mainNav_navBtnContainer">
             <motion.li
               variants={navVariants}
               initial="initial"
@@ -69,7 +67,7 @@ const Nav = ({ navSelection }) => {
           <a href="/" id="logo-container">
             <Logo />
           </a>
-          <Link to="/gallery" className="navBtnContainer">
+          <Link to="/gallery" className="mainNav_navBtnContainer">
             <motion.li
               variants={navVariants}
               initial="initial"
@@ -81,7 +79,7 @@ const Nav = ({ navSelection }) => {
               Gallery
             </motion.li>
           </Link>
-          <Link to="/location" className="navBtnContainer">
+          <Link to="/location" className="mainNav_navBtnContainer">
             <motion.li
               variants={navVariants}
               initial="initial"

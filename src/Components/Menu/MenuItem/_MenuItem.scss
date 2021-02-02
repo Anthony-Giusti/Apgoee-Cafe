@@ -1,0 +1,31 @@
+.menuItem {
+	font-family: $font-secondary;
+	text-align: center;
+	width: 70%;
+	margin: 1.2em auto 0 auto;
+
+	h3 {
+		color: $clr-accent;
+		text-shadow: 0.02em 0.02em rgba(0, 0, 0, 0.641);
+		margin: 0.7em auto;
+		padding: 0.2em;
+		border-top: 1px solid $dark;
+		border-bottom: 1px solid $dark;
+		width: fit-content;
+	}
+
+	&_price {
+		display: flex;
+		justify-content: center;
+
+		p {
+			margin: 2em 1em 0em 1em;
+		}
+	}
+
+	&_additions {
+		p {
+			font-style: italic;
+		}
+	}
+}

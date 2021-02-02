@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import './Gallery.css';
-
 const Gallery = ({
   GridData,
   switchNavSelection,
@@ -48,12 +46,12 @@ const Gallery = ({
   };
 
   return (
-    <section className="grid">
+    <section className="gallery">
       <motion.section
         variants={galleyVariants}
         animate="visible"
         initial="initial"
-        className="galleryGrid"
+        className="gallery_grid"
       >
         {showBackdrop && (
           <div
@@ -72,14 +70,14 @@ const Gallery = ({
             whileHover="hover"
             onClick={handleClick}
             onKeyPress={handleClick}
-            className={`gallery_item gallery_item_focus ${image.className}`}
+            className={`gallery_grid_item gallery_item_focus ${image.className}`}
             tabIndex={0}
           >
             <img
               src={image.url}
               alt={image.alt}
               id={image.alt}
-              className="gallery_image"
+              className="gallery_grid_item_image"
             />
             {showBackdrop && <div tabIndex={0} />}
           </motion.span>

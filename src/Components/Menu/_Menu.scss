@@ -1,0 +1,61 @@
+.menu {
+	margin: 0 auto;
+	background-image: url('https://res.cloudinary.com/diby2nljo/image/upload/c_scale,q_auto:eco,w_1343/v1611004266/CoffeeShopProject/cafeMenu.jpg');
+	background-size: 150rem;
+	margin-bottom: -3em;
+	position: relative;
+	z-index: 1;
+
+	&_menuNav {
+		position: relative;
+		z-index: 2;
+		ul {
+			margin: 0;
+			padding: 1em 0;
+			background-color: $clr-accent;
+		}
+		li {
+			background-color: Transparent;
+			text-shadow: 0.02em 0.02em black;
+			color: $light;
+			background-repeat: no-repeat;
+			border: none;
+			cursor: pointer;
+			overflow: hidden;
+		}
+	}
+
+	&_main {
+		position: relative;
+		bottom: 3em;
+		padding-top: 3em;
+		width: 70%;
+		margin: 0 auto;
+		background-color: $light;
+
+		&_description {
+			margin: 0;
+			padding: 1em;
+		}
+
+		&_header {
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		&_menuItems {
+			padding: 1em;
+		}
+	}
+}
+
+.menuNavSelected {
+	border-top: white solid 1px !important;
+	border-bottom: white solid 1px !important;
+}
+
+@media only screen and (max-width: 800px) {
+	.menuBody {
+		width: 85%;
+	}
+}

@@ -2,7 +2,7 @@
 
 ## Summary
 
-This is a project to practice with React Router which I had previusly never used before as well as SCSS.
+This is a project to practice with React Router which I had previously never used before. As well as practice more SCSS.
 
 [Live Build]
 

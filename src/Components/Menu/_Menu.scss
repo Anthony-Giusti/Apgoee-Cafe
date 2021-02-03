@@ -2,7 +2,7 @@
 	margin: 0 auto;
 	background-image: url('https://res.cloudinary.com/diby2nljo/image/upload/c_scale,q_auto:eco,w_1343/v1611004266/CoffeeShopProject/cafeMenu.jpg');
 	background-size: 150rem;
-	margin-bottom: -3em;
+	margin-bottom: -6em;
 	position: relative;
 	z-index: 1;
 
@@ -26,8 +26,8 @@
 
 	&_main {
 		position: relative;
-		bottom: 3em;
-		padding-top: 3em;
+		bottom: 6em;
+		padding-top: 6em;
 		width: 70%;
 		margin: 0 auto;
 		background-color: $light;
@@ -54,7 +54,19 @@
 }
 
 @media only screen and (max-width: 800px) {
-	.menuBody {
-		width: 85%;
+	.menu {
+		&_menuNav {
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					flex-basis: 25%;
+					padding: 0.5em 0.25em;
+				}
+			}
+		}
+		&_main{
+			width: 85%;
+		}
 	}
 }

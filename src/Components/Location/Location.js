@@ -3,8 +3,6 @@ import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 
-import './Location.css';
-
 const Location = ({ switchNavSelection }) => {
   switchNavSelection(useLocation());
 

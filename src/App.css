@@ -280,7 +280,7 @@ a:hover {
   margin: 0 auto;
   background-image: url("https://res.cloudinary.com/diby2nljo/image/upload/c_scale,q_auto:eco,w_1343/v1611004266/CoffeeShopProject/cafeMenu.jpg");
   background-size: 150rem;
-  margin-bottom: -3em;
+  margin-bottom: -6em;
   position: relative;
   z-index: 1;
 }
@@ -307,8 +307,8 @@ a:hover {
 
 .menu_main {
   position: relative;
-  bottom: 3em;
-  padding-top: 3em;
+  bottom: 6em;
+  padding-top: 6em;
   width: 70%;
   margin: 0 auto;
   background-color: white;
@@ -334,7 +334,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .menuBody {
+  .menu_menuNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu_menuNav ul li {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 0.5em 0.25em;
+  }
+  .menu_main {
     width: 85%;
   }
 }
@@ -522,7 +534,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .galleryGrid {
+  .gallery_grid {
     width: 85%;
   }
 }
@@ -556,7 +568,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .locationBody {
+  .location_main {
     width: 85%;
   }
 }
@@ -668,6 +680,12 @@ a:hover {
   }
   .footer_copyright {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer_info_donate_supportLinks {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=App.css.map */

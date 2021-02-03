@@ -30,7 +30,7 @@ const Menu = ({
 
   const menuVariants = {
     initial: {
-      y: -50,
+      y: -100,
       opacity: 0.2,
     },
     visible: {
@@ -71,7 +71,7 @@ const Menu = ({
     <section className="menu">
       <motion.nav
         className="menu_menuNav"
-        initial={{ y: -50 }}
+        initial={{ y: -100 }}
         animate={{ y: 0, type: 'tween' }}
         transition={{ type: 'tween', duration: 0.75 }}
       >

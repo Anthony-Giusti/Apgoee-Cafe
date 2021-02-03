@@ -63,7 +63,9 @@
 }
 
 @media only screen and (max-width: 800px) {
-	.galleryGrid {
+	.gallery {
+		&_grid{
 		width: 85%;
+		}
 	}
 }

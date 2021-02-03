@@ -27,7 +27,10 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .locationBody {
-        width: 85%;
+    .location {
+        &_main {
+            width: 85%;
+        }
+        
     }
 }

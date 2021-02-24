@@ -6,31 +6,29 @@ const Footer = () => (
       <section className="footer_info_donate">
         <h3>Support The Space</h3>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Nulla facilisi cras fermentum odio
-          eu. At quis risus sed vulputate odio. Eu augue ut lectus arcu
-          bibendum.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Nulla facilisi cras fermentum odio eu. At quis risus sed vulputate odio.
+          Eu augue ut lectus arcu bibendum.
         </p>
         <p>
-          llamcorper morbi tincidunt ornare massa eget. Eros in cursus turpis
-          massa tincidunt. Lacinia quis vel eros donec ac odio tempor. Eu
-          facilisis sed odio morbi quis commodo odio. Habitant morbi tristique
-          senectus et netus et malesuada fames ac. Id neque aliquam vestibulum
-          morbi blandit cursus risus at.
+          llamcorper morbi tincidunt ornare massa eget. Eros in cursus turpis massa tincidunt.
+          Lacinia quis vel eros donec ac odio tempor. Eu facilisis sed odio morbi quis commodo odio.
+          Habitant morbi tristique senectus et netus et malesuada fames ac. Id neque aliquam
+          vestibulum morbi blandit cursus risus at.
         </p>
-        <span className="footer_info_donate_supportLinks">
-          <a href="/">
+        <div className="footer_info_donate_supportLinks">
+          <a href="/" className="footer_info_donate_supportLinks_link">
             <p>Become a Member</p>
           </a>
-          <p>|</p>
-          <a href="/">
+          <p className="footer_info_donate_supportLinks_divider" />
+          <a href="/" className="footer_info_donate_supportLinks_link">
             <p>Doante</p>
           </a>
-          <p>|</p>
-          <a href="/">
+          <p className="footer_info_donate_supportLinks_divider" />
+          <a href="/" className="footer_info_donate_supportLinks_link">
             <p>Account</p>
           </a>
-        </span>
+        </div>
       </section>
       <section className="footer_info_contact">
         <h3>Come Find Us</h3>

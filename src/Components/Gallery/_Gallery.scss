@@ -7,7 +7,7 @@
 		margin: 0 auto;
 		width: 80%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
 		align-items: center;
 		justify-items: center;
 		background-color: $clr-accent;

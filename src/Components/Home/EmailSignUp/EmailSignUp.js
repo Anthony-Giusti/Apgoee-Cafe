@@ -5,9 +5,7 @@ import PropTypes from 'prop-types';
 const EmailSignUp = ({ emailOpen, setEmailOpen }) => {
   const [emailError, setEmailError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [signUpMessage, setSignUpMessage] = useState(
-    'Sign Up For The Newsletter!'
-  );
+  const [signUpMessage, setSignUpMessage] = useState('Sign Up For The Newsletter!');
 
   const emailValidation = (event) => {
     event.preventDefault();

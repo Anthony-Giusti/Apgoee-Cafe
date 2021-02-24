@@ -16,11 +16,7 @@ const Menu = ({
   switchNavSelection(useLocation());
 
   const itemsMap = currentMenu.items.map((item) => (
-    <MenuItem
-      item={item}
-      key={item.name}
-      getItemAdditions={getItemAdditions}
-    ></MenuItem>
+    <MenuItem item={item} key={item.name} getItemAdditions={getItemAdditions} />
   ));
 
   const handeClick = (e) => {
@@ -159,9 +155,7 @@ const Menu = ({
         >
           <p className="menu_main_description">{currentMenu.description}</p>
           {currentMenu.additions && (
-            <span className='"menu_main_additions'>
-              {getItemAdditions(currentMenu.additions)}
-            </span>
+            <div className='"menu_main_additions'>{getItemAdditions(currentMenu.additions)}</div>
           )}
         </motion.section>
         <motion.section

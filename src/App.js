@@ -39,9 +39,7 @@ function App() {
   };
 
   const getItemAdditions = (additions) =>
-    additions.map((addition) => (
-      <p>{`${addition.type} +$${addition.price}`}</p>
-    ));
+    additions.map((addition) => <p>{`${addition.type} +$${addition.price}`}</p>);
 
   const createGalleryTrap = (target) => {
     setGalleryTrap(
@@ -84,10 +82,7 @@ function App() {
   return (
     <Router>
       <section className="app">
-        <Nav
-          navSelection={navSelection}
-          switchNavSelection={switchNavSelection}
-        />
+        <Nav navSelection={navSelection} switchNavSelection={switchNavSelection} />
         <Switch>
           <Route path="/" exact component={Home}>
             <Home
@@ -115,10 +110,10 @@ function App() {
               imageInspect={imageInspect}
               setImageInspect={setImageInspect}
               switchNavSelection={switchNavSelection}
-            ></Gallery>
+            />
           </Route>
           <Route path="/location" component={Location}>
-            <Location switchNavSelection={switchNavSelection}></Location>
+            <Location switchNavSelection={switchNavSelection} />
           </Route>
         </Switch>
         <Footer />

@@ -18,8 +18,7 @@ const MenuData = [
     items: [
       {
         name: 'Apogee Sigunature Blend',
-        description:
-          'Nullam facilisis, leo sed pretium dignissim, arcu arcu viverra neque.',
+        description: 'Nullam facilisis, leo sed pretium dignissim, arcu arcu viverra neque.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -27,8 +26,7 @@ const MenuData = [
       },
       {
         name: 'Pour Over',
-        description:
-          'Vestibulum interdum viverra turpis, sit amet ornare sapien.',
+        description: 'Vestibulum interdum viverra turpis, sit amet ornare sapien.',
         prices: {
           small: 3.59,
           large: 5.39,
@@ -36,8 +34,7 @@ const MenuData = [
       },
       {
         name: 'Café Au Lait',
-        description:
-          'Fusce erat tortor, ornare in dapibus sit amet, sodales efficitur diam.',
+        description: 'Fusce erat tortor, ornare in dapibus sit amet, sodales efficitur diam.',
         prices: {
           small: 3.99,
           large: 5.99,
@@ -45,8 +42,7 @@ const MenuData = [
       },
       {
         name: 'French Press',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut.',
         prices: {
           small: 4.29,
           large: 6.29,
@@ -68,8 +64,7 @@ const MenuData = [
     items: [
       {
         name: 'Espresso',
-        description:
-          'Ut viverra ac eros tempus venenatis. Sed ullamcorper pretium auctor.',
+        description: 'Ut viverra ac eros tempus venenatis. Sed ullamcorper pretium auctor.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -77,8 +72,7 @@ const MenuData = [
       },
       {
         name: 'Americano',
-        description:
-          'Nullam efficitur, risus nec eleifend laoreet, mi justo aliquet lorem.',
+        description: 'Nullam efficitur, risus nec eleifend laoreet, mi justo aliquet lorem.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -94,8 +88,7 @@ const MenuData = [
       },
       {
         name: 'Cappucino',
-        description:
-          'Nam viverra neque elit, pretium condimentum leo vestibulum vel.',
+        description: 'Nam viverra neque elit, pretium condimentum leo vestibulum vel.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -128,8 +121,7 @@ const MenuData = [
       },
       {
         name: 'Iced Tea',
-        description:
-          'In iaculis cursus volutpat. Sed fringilla urna eget fermentum scelerisque. ',
+        description: 'In iaculis cursus volutpat. Sed fringilla urna eget fermentum scelerisque. ',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -145,8 +137,7 @@ const MenuData = [
       },
       {
         name: 'Iced Latee',
-        description:
-          'Nullam et nisl iaculis est rhoncus ornare. Nulla sed consectetur neque.',
+        description: 'Nullam et nisl iaculis est rhoncus ornare. Nulla sed consectetur neque.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -162,8 +153,7 @@ const MenuData = [
     items: [
       {
         name: 'Green Tea',
-        description:
-          'Phasellus tellus erat, hendrerit id purus vel, fermentum hendrerit eros.',
+        description: 'Phasellus tellus erat, hendrerit id purus vel, fermentum hendrerit eros.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -177,8 +167,7 @@ const MenuData = [
       },
       {
         name: 'Black Tea',
-        description:
-          'Ut tortor turpis, tempor a imperdiet sed, commodo eu dolor.',
+        description: 'Ut tortor turpis, tempor a imperdiet sed, commodo eu dolor.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -200,8 +189,7 @@ const MenuData = [
       },
       {
         name: 'Hot Chocolate',
-        description:
-          ' Suspendisse ac nisl sed tortor convallis fermentum a eget erat.',
+        description: ' Suspendisse ac nisl sed tortor convallis fermentum a eget erat.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -218,8 +206,7 @@ const MenuData = [
     items: [
       {
         name: 'Bagels',
-        description:
-          'Morbi vulputate enim ac eleifend feugiat. Donec eu porttitor nibh. ',
+        description: 'Morbi vulputate enim ac eleifend feugiat. Donec eu porttitor nibh. ',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -267,8 +254,7 @@ const MenuData = [
     items: [
       {
         name: 'Tuna Sandwich',
-        description:
-          'In hac habitasse platea dictumst. Cras sollicitudin orci urna.',
+        description: 'In hac habitasse platea dictumst. Cras sollicitudin orci urna.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -276,8 +262,7 @@ const MenuData = [
       },
       {
         name: 'Chicken Salad',
-        description:
-          'Donec viverra luctus nulla, eget mattis lorem aliquet vitae.',
+        description: 'Donec viverra luctus nulla, eget mattis lorem aliquet vitae.',
         prices: {
           small: 3.89,
           large: 5.49,
@@ -293,8 +278,7 @@ const MenuData = [
       },
       {
         name: 'Tomato Soup',
-        description:
-          'Nam vulputate dolor in est volutpat, vitae cursus ante feugiat. ',
+        description: 'Nam vulputate dolor in est volutpat, vitae cursus ante feugiat. ',
         prices: {
           small: 3.89,
           large: 5.49,

@@ -19,6 +19,17 @@
 
 			&_supportLinks {
 				display: flex;
+				justify-content: space-between;
+				max-width: 25em;
+
+				&_link {
+					text-align: center;
+				}
+			
+				&_divider {
+					width: 1px;
+					background-color: black;
+				}
 			}
 		}
 
@@ -80,8 +91,6 @@
 
 				&_supportLinks {
 					margin: 0 auto;
-					width: 70%;
-					justify-content: space-between;
 				}
 			}
 
@@ -98,12 +107,30 @@
 	}
 }
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
 	.footer{
 		&_info {
 			&_donate{
 				&_supportLinks{
 					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.footer{
+		&_info{
+			&_donate{
+				&_supportLinks{
+					display: block;
+
+					&_divider {
+						width: 60%;
+						height: 1px;
+						margin: 0 auto;
+					}
 				}
 			}
 		}

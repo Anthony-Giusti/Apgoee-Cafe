@@ -6,15 +6,11 @@ const MenuItem = ({ item, getItemAdditions }) => (
     <hr />
     <h3>{item.name}</h3>
     <p>{item.description}</p>
-    <section className="menuItem_price">
+    <div className="menuItem_price">
       <p>{`Small ● $${item.prices.small}`}</p>
       <p>{`Large ● $${item.prices.large}`}</p>
-    </section>
-    {item.additions && (
-      <div className="menuItem_additions">
-        {getItemAdditions(item.additions)}
-      </div>
-    )}
+    </div>
+    {item.additions && <div className="menuItem_additions">{getItemAdditions(item.additions)}</div>}
   </div>
 );
 

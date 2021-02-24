@@ -40,8 +40,8 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
           >
             Welcome To Our Space
           </motion.h2>
-          <span className="home_videoContainer_textContainer_mission">
-            <motion.span
+          <div className="home_videoContainer_textContainer_mission">
+            <motion.div
               className="home_videoContainer_textContainer_mission_mission_section"
               variants={variants}
               initial="initial"
@@ -50,15 +50,14 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
             >
               <h3>Et netus</h3>
               <p>
-                Et netus et malesuada fames ac. Varius sit amet mattis vulputate
-                enim. Metus aliquam eleifend mi in nulla. Adipiscing diam donec
-                adipiscing tristique risus. Consectetur a erat nam at. Gravida
-                quis blandit turpis cursus in hac habitasse platea. Neque
-                viverra justo nec ultrices. Diam in arcu cursus euismod quis
-                viverra. Congue quisque egestas diam in arcu cursus.
+                Et netus et ma lesuada fames ac. Varius sit amet mattis vulputate enim. Metus
+                aliquam eleifend mi in nulla. Adipiscing diam donec adipiscing tristique risus.
+                Consectetur a erat nam at. Gravida quis blandit turpis cursus in hac habitasse
+                platea. Neque viverra justo nec ultrices. Diam in arcu cursus euismod quis viverra.
+                Congue quisque egestas diam in arcu cursus.
               </p>
-            </motion.span>
-            <motion.span
+            </motion.div>
+            <motion.div
               className="home_videoContainer_textContainer_mission_mission_section"
               variants={variants}
               initial="initial"
@@ -67,15 +66,13 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
             >
               <h3>Ridiculus mus </h3>
               <p>
-                Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.
-                Interdum varius sit amet mattis vulputate enim. Penatibus et
-                magnis dis parturient. Lacinia at quis risus sed. Elit
-                ullamcorper dignissim cras tincidunt lobortis. Mi ipsum faucibus
-                vitae aliquet nec. Nunc scelerisque viverra mauris in aliquam
-                sem fringilla.
+                Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Interdum varius sit
+                amet mattis vulputate enim. Penatibus et magnis dis parturient. Lacinia at quis
+                risus sed. Elit ullamcorper dignissim cras tincidunt lobortis. Mi ipsum faucibus
+                vitae aliquet nec. Nunc scelerisque viverra mauris in aliquam sem fringilla.
               </p>
-            </motion.span>
-            <motion.span
+            </motion.div>
+            <motion.div
               className="home_videoContainer_textContainer_mission_mission_section"
               variants={variants}
               initial="initial"
@@ -84,15 +81,14 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
             >
               <h3>Lorem ipsum</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-                at consectetur lorem donec massa. Ipsum a arcu cursus vitae.
-                Lobortis feugiat vivamus at augue eget. Risus at ultrices mi
-                tempus. Lectus sit amet est placerat in egestas erat imperdiet.
-                Eu scelerisque felis imperdiet proin fermentum leo vel.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Duis at consectetur lorem donec massa.
+                Ipsum a arcu cursus vitae. Lobortis feugiat vivamus at augue eget. Risus at ultrices
+                mi tempus. Lectus sit amet est placerat in egestas erat imperdiet. Eu scelerisque
+                felis imperdiet proin fermentum leo vel.
               </p>
-            </motion.span>
-          </span>
+            </motion.div>
+          </div>
         </div>
       </div>
       <motion.section
@@ -104,23 +100,20 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
       >
         <h2>Objectives</h2>
         <p>
-          Orci nulla pellentesque dignissim enim sit. Cras ornare arcu dui
-          vivamus arcu felis bibendum. Eget velit aliquet sagittis id
-          consectetur purus ut faucibus pulvinar. Consequat id porta nibh
-          venenatis. Fermentum leo vel orci porta non pulvinar. Odio ut sem
-          nulla pharetra diam sit amet. Ut diam quam nulla porttitor massa.
-          Tortor posuere ac ut consequat semper viverra nam libero justo.
-          Feugiat vivamus at augue eget arcu dictum varius. Morbi tincidunt
-          augue interdum velit euismod in pellentesque massa placerat.
+          Orci nulla pellentesque dignissim enim sit. Cras ornare arcu dui vivamus arcu felis
+          bibendum. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Consequat
+          id porta nibh venenatis. Fermentum leo vel orci porta non pulvinar. Odio ut sem nulla
+          pharetra diam sit amet. Ut diam quam nulla porttitor massa. Tortor posuere ac ut consequat
+          semper viverra nam libero justo. Feugiat vivamus at augue eget arcu dictum varius. Morbi
+          tincidunt augue interdum velit euismod in pellentesque massa placerat.
         </p>
         <p>
-          Scelerisque in dictum non consectetur a erat nam. Amet venenatis urna
-          cursus eget nunc scelerisque viverra. Nascetur ridiculus mus mauris
-          vitae. Eu scelerisque felis imperdiet proin fermentum leo vel orci. Et
-          molestie ac feugiat sed lectus. Laoreet id donec ultrices tincidunt
-          arcu non sodales neque sodales. Diam sit amet nisl suscipit adipiscing
-          bibendum est ultricies. Quisque non tellus orci ac auctor augue mauris
-          augue. Neque viverra justo nec ultrices dui sapien.
+          Scelerisque in dictum non consectetur a erat nam. Amet venenatis urna cursus eget nunc
+          scelerisque viverra. Nascetur ridiculus mus mauris vitae. Eu scelerisque felis imperdiet
+          proin fermentum leo vel orci. Et molestie ac feugiat sed lectus. Laoreet id donec ultrices
+          tincidunt arcu non sodales neque sodales. Diam sit amet nisl suscipit adipiscing bibendum
+          est ultricies. Quisque non tellus orci ac auctor augue mauris augue. Neque viverra justo
+          nec ultrices dui sapien.
         </p>
       </motion.section>
       <EmailSignUp emailOpen={emailOpen} setEmailOpen={setEmailOpen} />
@@ -134,23 +127,20 @@ const Home = ({ switchNavSelection, emailOpen, setEmailOpen }) => {
         >
           <h2>Our Vision</h2>
           <p>
-            Scelerisque in dictum non consectetur a erat nam. Amet venenatis
-            urna cursus eget nunc scelerisque viverra. Nascetur ridiculus mus
-            mauris vitae. Eu scelerisque felis imperdiet proin fermentum leo vel
-            orci. Et molestie ac feugiat sed lectus. Laoreet id donec ultrices
-            tincidunt arcu non sodales neque sodales. Diam sit amet nisl
-            suscipit adipiscing bibendum est ultricies. Quisque non tellus orci
-            ac auctor augue mauris augue. Neque viverra justo nec ultrices dui
-            sapien.
+            Scelerisque in dictum non consectetur a erat nam. Amet venenatis urna cursus eget nunc
+            scelerisque viverra. Nascetur ridiculus mus mauris vitae. Eu scelerisque felis imperdiet
+            proin fermentum leo vel orci. Et molestie ac feugiat sed lectus. Laoreet id donec
+            ultrices tincidunt arcu non sodales neque sodales. Diam sit amet nisl suscipit
+            adipiscing bibendum est ultricies. Quisque non tellus orci ac auctor augue mauris augue.
+            Neque viverra justo nec ultrices dui sapien.
           </p>
           <p>
-            Non quam lacus suspendisse faucibus interdum posuere lorem ipsum
-            dolor. Duis at tellus at urna. Ullamcorper morbi tincidunt ornare
-            massa eget egestas. Urna id volutpat lacus laoreet non curabitur
-            gravida. Condimentum mattis pellentesque id nibh. At tellus at urna
-            condimentum mattis pellentesque id nibh tortor. Sapien eget mi proin
-            sed libero enim. Eget nulla facilisi etiam dignissim. Facilisis sed
-            odio morbi quis commodo odio aenean sed adipiscing.
+            Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Duis at tellus
+            at urna. Ullamcorper morbi tincidunt ornare massa eget egestas. Urna id volutpat lacus
+            laoreet non curabitur gravida. Condimentum mattis pellentesque id nibh. At tellus at
+            urna condimentum mattis pellentesque id nibh tortor. Sapien eget mi proin sed libero
+            enim. Eget nulla facilisi etiam dignissim. Facilisis sed odio morbi quis commodo odio
+            aenean sed adipiscing.
           </p>
         </motion.div>
       </section>

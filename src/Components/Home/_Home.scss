@@ -22,19 +22,18 @@
 		&_textContainer {
 			height: 100%;
 			width: 100%;
-			position: absolute;
+			position: relative;
 			z-index: 6;
-			top: 0px;
+			top: -100%;
 			color: white;
 			text-shadow: 1px 1px rgb(0, 0, 0);
 
 			&_mission{
 				display: flex;
-				flex-direction: row;
 
 				&_mission_section {
 					margin: 0 2em;
-					width: 30%;
+					// width: 30%;
 				}
 			}
 		}
@@ -66,7 +65,7 @@
 @media only screen and (max-width: 1300px) {
 	.home{
 		&_videoContainer {
-			height: calc(40em - 15vw);
+			height: calc(35em - 15vw);
 		}
 	}
 }
@@ -75,18 +74,13 @@
 	.home{
 
 		&_videoContainer {
-		height: calc(45em - 8vw);
+		height: calc(50em - 25vw);
 		
 			&_textContainer{
-				width: 90%;
-				margin-left: 4vw;
+				margin: 0 auto;
 
 				&_mission {
 					display: block;
-		
-					&_section {
-						width: 80%;
-					}
 				}
 			}
 		}
@@ -99,22 +93,12 @@
 			width: 90%;
 		}
 	}
-
-	
-}
-
-@media only screen and (max-width: 800px) {
-	.home{
-		&_videoContainer {
-			height: calc(50em - 5vw);
-		}
-	}
 }
 
 @media only screen and (max-width: 600px) {
 	.home{
 		&_videoContainer{
-			height: calc(60em - 15vw);
+			height: calc(100em - 165vw);
 		}
 	}
 }
